@@ -1,0 +1,51 @@
+{
+  "title": "Education",
+  "education": [
+    {
+      "degree": "Computer Science and Engineering Program",
+      "school": "Sakarya University",
+      "period": "2019 - 2022",
+      "note": "dropped out due to relocation after completing 229/240 AKTS credits including graduation project and thesis",
+      "description": [
+        "## Program Focus",
+        "",
+        "Specialized in desktop software development and embedded systems:",
+        "",
+        "- Project design",
+        "- Desktop application development",
+        "- Developer operations",
+        "- Medical device and application development",
+        "",
+        "",
+        "## Graduation Project:",
+        "Developed a patient monitoring application as a part of medical device",
+        "## Graduation Thesis:",
+        "Designed a medical device",
+        " ",
+        "- The capstone course consists of two parts; the thesis/design is done in the first winter semester of the senior year,",
+        "  while the thesis and the designed project are developed in the spring semester.",
+        "- In the thesis/design part, I designed a medical device, and in the project part, I implemented a part of this design.",
+        "- The device I designed is a bedside monitor device. In the development phase, I developed the main application of this device",
+        "  and created a project that works with simulation data. In the design part, the idea is making more feasible, modular, extensible, and easy-to-change hardware.",
+        "- The aim of the project is to display vital data such as ECG, SpO2, and respiratory information on the screen that we receive with probes",
+        "  attached to the patient.",
+        "",
+        "https://cs.sakarya.edu.tr/en"
+      ],
+      "thesisProjects": [
+        {
+          "label": "Design",
+          "name": "Medical Device Design",
+          "link": "https://finjener.github.io/#/articles/grad_design_document"
+        },
+        {
+          "label": "Project",
+          "name": "VitalSync Medical Monitoring Application",
+          "link": "https://finjener.github.io/#/articles/medical-device-simulation",
+          "github": "https://github.com/finjener/vitalsync"
+        }
+      ],
+      "achievements": []
+    }
+  ]
+}

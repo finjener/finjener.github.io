@@ -1,0 +1,75 @@
+{
+  "title": "Experience",
+  "experiences": [
+    {
+      "title": "Software Developer - Contract",
+      "company": "FlipFlop Studios",
+      "location": "Istanbul, Turkey",
+      "period": "04.2023 - ",
+      "description": [
+        "- Working on analytics/telemetry fetching and trend analysis application for a indie game development system."
+      ],
+      "technologies": [],
+      "achievements": []
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Emakina.TR",
+      "location": "Izmir, Turkey",
+      "period": "02.2022 - 04.2023",
+      "description": [
+        "- Worked on migration of legacy custom database.",
+        "- Implemented GraphQL wrappers in C++ like proprietary language."
+      ],
+      "technologies": [],
+      "achievements": []
+    },
+    {
+      "title": "Software Developer",
+      "company": "Abramak Information Technologies",
+      "location": "Istanbul, Turkey",
+      "period": "10.2021 - 01.2022",
+      "description": [
+        "- Developed a PyQt archive application",
+        "- Worked on ship integrated communication system with C++/Qt."
+      ],
+      "technologies": [],
+      "achievements": []
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Eyedius Technology",
+      "location": "Istanbul, Turkey",
+      "period": "02.2021 - 09.2021",
+      "description": [
+        "- Worked on a workplace security product developed with C++/Qt."
+      ],
+      "technologies": [],
+      "achievements": []
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Eretna Medical Devices",
+      "location": "Istanbul, Turkey",
+      "period": "02.2020 - 02.2021",
+      "description": [
+        "- While implementing new features and working on bugs, I developed a lite version of the primary application.",
+        "- Simultaneously, on the operating system front, I engineered a customized Linux image using Buildroot, with the latest Qt binaries.",
+        "- Additionally, I designed and implemented an automation tool to streamline and enhance the efficiency of the development process."
+      ],
+      "technologies": [],
+      "achievements": []
+    },
+    {
+      "title": "Software Engineer - Part Time",
+      "company": "Eretna Medical Devices",
+      "location": " ",
+      "period": "03.2019 - 01.2020",
+      "description": [
+        "- Worked with Buildroot, Linux, C++/Qt-Qml, SQLite."
+      ],
+      "technologies": [],
+      "achievements": []
+    }
+  ]
+}

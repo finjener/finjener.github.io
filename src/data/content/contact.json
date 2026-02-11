@@ -1,0 +1,58 @@
+{
+  "title": "",
+  "name": "Ferhat Sencer",
+  "phone": "+90 552 348 23 44",
+  "email": "sencerferhat44@gmail.com",
+  "website": "finjener.github.io",
+  "address": "Istanbul, Turkey",
+  "languages": "Turkish, English",
+  "description": "",
+  "form": {
+    "title": "Send a Message",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your.email@example.com",
+        "required": true
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message here...",
+        "required": true
+      }
+    },
+    "submitButton": {
+      "text": "Send Message"
+    }
+  },
+  "socialLinks": {
+    "title": "Connect With Me",
+    "platforms": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/finjener",
+        "icon": "github"
+      },
+      {
+        "name": "X/Twitter",
+        "url": "https://x.com/finjener",
+        "icon": "X/twitter"
+      },
+      {
+        "name": "Bluesky",
+        "url": "https://bsky.app/profile/finjener.bsky.social",
+        "icon": "Bluesky"
+      },
+      {
+        "name": "Mastodon",
+        "url": "https://mastodon.social/@finjener",
+        "icon": "Mastodon"
+      }
+    ]
+  }
+}

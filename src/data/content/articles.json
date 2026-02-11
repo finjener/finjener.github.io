@@ -1,0 +1,91 @@
+{
+  "title": "Articles",
+  "description": [
+    "#",
+    ""
+  ],
+  "categories": [
+    "All",
+    "Tutorial",
+    "Technology",
+    "Development",
+    "Career",
+    "Research"
+  ],
+  "items": [
+    {
+      "id": "1",
+      "slug": "custom-os-build-automation-for-embeded-systems",
+      "title": "Custom OS Build Automation for Embedded Systems",
+      "category": "Technology",
+      "excerpt": "An article discussing the automation of custom OS builds for embedded systems.",
+      "readTime": "5-8 min read",
+      "date": "2021-2022",
+      "author": "finjener",
+      "tags": [
+        "Embedded Systems",
+        "OS Build",
+        "Automation",
+        "DevOps"
+      ],
+      "contentPath": "articles/custom-os-build-automation-for-embeded-systems.md"
+    },
+    {
+      "id": "2",
+      "slug": "medical-device-simulation",
+      "title": "Medical Device Simulation: A Software Engineering Approach",
+      "category": "Research",
+      "excerpt": "An article about graduation project focusing on application structure.",
+      "readTime": "25-30 min read",
+      "date": "2021-2022",
+      "author": "finjener",
+      "tags": [
+        "Medical Devices",
+        "Simulation",
+        "Software Engineering",
+        "Qt",
+        "C++",
+        "Research"
+      ],
+      "contentPath": "articles/medical-device-simulation.md"
+    },
+    {
+      "id": "3",
+      "slug": "detect-it-object-detection-with-yolov8",
+      "title": "DetectIt: Object Detection with Yolov8",
+      "category": "Research",
+      "excerpt": "Proof-of-Concept demonstrating of real-time object detection on a standard desktop computer.",
+      "readTime": "10-15 min read",
+      "date": "2024",
+      "author": "finjener",
+      "tags": [
+        "Object Detection",
+        "Yolov8",
+        "Software Engineering",
+        "Qt",
+        "C++",
+        "Research"
+      ],
+      "contentPath": "articles/detect-it-object-detection-with-yolov8.md"
+    },
+    {
+      "id": "4",
+      "slug": "grad_design_document",
+      "title": "Medical Device Design: Patient Monitoring System",
+      "category": "Research",
+      "excerpt": "A design document for graduation project's preview research.",
+      "readTime": "5-10 min read",
+      "date": "2021-2022",
+      "author": "finjener",
+      "tags": [
+        "Design",
+        "Medical Device",
+        "Software Engineering",
+        "Qt",
+        "C++",
+        "Research"
+      ],
+      "contentPath": "articles/grad_design_document.md"
+    }
+  ]
+}

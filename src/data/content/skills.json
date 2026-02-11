@@ -1,0 +1,88 @@
+{
+  "title": "Technical Skills",
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "description": [
+        "### Focus Areas",
+        "- Cross-platform Development",
+        "- C++/Qt Development",
+        "- Linux/Unix environments"
+      ],
+      "skills": [
+        "C++",
+        "Qt",
+        "Linux",
+        "Debian/Fedora/Arch",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Embedded Systems",
+      "description": [
+        "## Embedded Development",
+        "",
+        "### Platforms",
+        "- Radxa Rock series",
+        "- Raspberry pi series",
+        "- Buildroot",
+        "",
+        "### Specialties",
+        "- Developing custom linux distribution",
+        "- Customization operating system",
+        "- Device driver development"
+      ],
+      "skills": [
+        "Radxa",
+        "Raspberry Pi",
+        "Embedded Linux",
+        "Buildroot",
+        "Qt"
+      ]
+    },
+    {
+      "name": "Tools & Technologies",
+      "description": [
+        "### Development Tools",
+        "",
+        "**Preferred Stack:**",
+        "- Git",
+        "- CMake",
+        "- Docker",
+        "",
+        "### Development Environment",
+        "- Linux/Unix environments",
+        "- CI/CD pipelines",
+        "- Agile methodologies"
+      ],
+      "skills": [
+        "Git",
+        "Docker",
+        "CMake",
+        "VS Code"
+      ]
+    },
+    {
+      "name": "Familiar Technologies",
+      "description": [
+        "### Development Tools",
+        "",
+        "**Preferred Stack:**",
+        "- Git",
+        "- CMake",
+        "- Docker",
+        "",
+        "### Development Environment",
+        "- Linux/Unix environments",
+        "- CI/CD pipelines",
+        "- Agile methodologies"
+      ],
+      "skills": [
+        "Python",
+        "Rust",
+        "Javascript",
+        "DDev/Distrobox/Toolbox"
+      ]
+    }
+  ]
+}

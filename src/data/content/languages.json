@@ -1,0 +1,21 @@
+{
+  "title": "Languages",
+  "languages": [
+    {
+      "name": "English",
+      "level": "Professional Working Proficiency",
+      "certificates": [
+        {
+          "name": "Internal Company Assessment",
+          "score": "B2+ (according to internal company assessment in 2022)",
+          "date": "2022"
+        }
+      ]
+    },
+    {
+      "name": "Turkish",
+      "level": "Native",
+      "certificates": []
+    }
+  ]
+}

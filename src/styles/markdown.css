@@ -1,0 +1,41 @@
+/* 
+  src/styles/markdown.css
+  This file is imported by index.css and provides custom styles 
+  for markdown content rendered via react-markdown.
+*/
+
+/* Base styles for the prose wrapper */
+.prose-edex {
+  @apply text-edex-light leading-relaxed;
+}
+
+/* Specific overrides for prose elements */
+.prose-edex h1,
+.prose-edex h2,
+.prose-edex h3,
+.prose-edex h4,
+.prose-edex h5,
+.prose-edex h6 {
+  @apply text-edex-glow;
+}
+
+.prose-edex a {
+  @apply text-edex hover:text-edex-glow;
+}
+
+.prose-edex blockquote {
+  @apply border-l-edex-dark;
+}
+
+.prose-edex code {
+  @apply bg-edex-dark/30 text-edex rounded-sm px-1 py-0.5;
+}
+
+/* Styles for syntax highlighted code blocks */
+.code-block-wrapper {
+  @apply relative;
+}
+
+.code-block-language {
+  @apply absolute right-2 top-2 text-xs text-edex-light/50 font-mono;
+} 

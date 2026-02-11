@@ -1,0 +1,12 @@
+{
+  "title": "Resume Contact Information",
+  "description": "Contact details specifically for the generated PDF resume header.",
+  "name": "Ferhat Sencer",
+  "address": "Istanbul, Turkey",
+  "phone": "+90 552 348 23 44",
+  "email": "sencerferhat44@gmail.com",
+  "linkedin": "",
+  "github": "github.com/finjener",
+  "website": "finjener.github.io",
+  "languages": "Turkish, English"
+}

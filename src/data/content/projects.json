@@ -1,0 +1,255 @@
+{
+  "title": "Projects",
+  "categories": [
+    {
+      "name": "Automation project",
+      "description": "Projects developed in professional work environments",
+      "projects": [
+        {
+          "title": "ros tool; custom linux build automation",
+          "description": [
+            "",
+            "",
+            "Automation tool for building custom Linux distributions for embedded systems:",
+            "",
+            "- Modular architecture for kernel compilation and filesystem generation",
+            "- Workflow automation from source to deployment",
+            "- Support for experimentation with different build parameters",
+            ""
+          ],
+          "tech": [
+            "Bash",
+            "Linux",
+            "Buildroot",
+            "Cross-compilation",
+            "Docker",
+            "Raspberry Pi",
+            "Radxa"
+          ],
+          "image": "/images/projects/ros-tool.jpg",
+          "link": "/articles/custom-os-build-automation-for-embeded-systems",
+          "highlights": [
+            "Automated multi-hour build process into a single command",
+            "Enabled rapid experimentation with different system configurations",
+            "Implemented robust error handling and validation"
+          ],
+          "status": "Completed",
+          "year": "2021 - 2022",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "impact": "Reduced build times and enabled modern Qt features for application development",
+          "github": "https://github.com/finjener/ros_tool"
+        }
+      ]
+    },
+    {
+      "name": "VitalSync Medical Device Project",
+      "description": "A physiological monitoring application built with C++ and Qt",
+      "projects": [
+        {
+          "title": "medical device simulation",
+          "description": [
+            "",
+            "",
+            "A physiological monitoring application developed to process, and display real-time patient data:",
+            "",
+            "- Modular architecture with multiple data sources",
+            "- Real-time waveform visualization (ECG, respiration, etc.)",
+            "- Numerical parameter display (heart rate, SpO2, etc.)"
+          ],
+          "tech": [
+            "C++",
+            "Qt",
+            "CMake"
+          ],
+          "image": "/images/projects/vitalsync.jpg",
+          "link": "/articles/medical-device-simulation",
+          "highlights": [
+            "Developed custom painting for waveform visualization",
+            "Built configurable data providers with property system"
+          ],
+          "status": "Completed",
+          "year": "2022",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "github": "https://github.com/finjener/vitalsync"
+        }
+      ]
+    },
+    {
+      "name": "DIY Project; Object Detection",
+      "description": "Side projects and experiments to building a system for house",
+      "projects": [
+        {
+          "title": "real-time object detection",
+          "description": [
+            "",
+            "",
+            "Desktop application for real-time object detection:",
+            "",
+            "- Live video stream processing from camera",
+            "- Real-time object detection using YOLOv8n model",
+            "- Measuring FPS on different hardware",
+            "",
+            "### Technologies Used",
+            "",
+            "- C++ for core functionality",
+            "- Qt framework for UI components",
+            "- YOLOv8 for object detection model"
+          ],
+          "tech": [
+            "C++",
+            "Qt",
+            "YOLOv8",
+            "Computer Vision"
+          ],
+          "image": "/images/projects/object-detection.jpg",
+          "link": "articles/detect-it-object-detection-with-yolov8",
+          "highlights": [
+            "Implemented real-time video processing pipeline",
+            "Integrated YOLOv8n model for efficient object detection",
+            "Intended for low power hardware"
+          ],
+          "status": "Active",
+          "year": "2024",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "impact": "Made a conclusion if developing this kind of application in C++/Qt platform is feasible or not",
+          "github": "https://github.com/finjener/detectit"
+        }
+      ]
+    },
+    {
+      "name": "System Administration Project",
+      "description": "Tools and utilities for system management",
+      "projects": [
+        {
+          "title": "debian tools",
+          "description": [
+            "",
+            "",
+            "A toolkit that simplifies first setup through easy-to-use scripts for Debian-based systems.",
+            "",
+            "",
+            "",
+            "- Quickly install popular software packages without remembering complex commands",
+            "- Automate routine system administration tasks",
+            "- Save time during system setup and maintenance",
+            "",
+            "## Features",
+            "",
+            "The toolkit offers scripts for:",
+            "",
+            "- Browser installations (Brave, LibreWolf, Waterfox)",
+            "- VPN setups (Mullvad, ProtonVPN, IVPN)",
+            "- Development environments (Qt/QML/C++)",
+            "- System configurations (systemd-resolved, GRUB)",
+            "- Virtualization tools (QEMU/KVM, Waydroid)",
+            "- Android tools (Custom ROM installation, WiFi network backup)"
+          ],
+          "tech": [
+            "Bash",
+            "Linux",
+            "Debian",
+            "System Administration"
+          ],
+          "image": "/images/projects/debian-tools.jpg",
+          "highlights": [
+            "Consolidated multi-step installations into single scripts",
+            "Implemented consistent error handling and user feedback",
+            "Added uninstallation options for all components"
+          ],
+          "status": "Active",
+          "year": "2023",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "impact": "Reduced system setup time and eliminated repetitive googling for common tasks",
+          "github": "https://github.com/finjener/debian-tools"
+        }
+      ]
+    },
+    {
+      "name": "Wordle Clone",
+      "description": "",
+      "projects": [
+        {
+          "title": "wordle clone",
+          "description": [
+            "",
+            "A clone of the Wordle game"
+          ],
+          "tech": [
+            "C++",
+            "Qt",
+            "QML",
+            "CMake",
+            "MVC"
+          ],
+          "image": "/images/projects/wordle-mvc.jpg",
+          "status": "Complete",
+          "year": "2024",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "impact": "Demonstrated Hierarchical CMake and MVC with Qml",
+          "github": "https://github.com/finjener/wordle_clone"
+        }
+      ]
+    },
+    {
+      "name": "Space Shooter",
+      "description": "A Unity arcade game where you control a spaceship, destroy enemies, collect powerups, and survive as long as possible.",
+      "projects": [
+        {
+          "title": "space shooter",
+          "description": [
+            "",
+            "",
+            "A Unity-based arcade game developed to explore Unity and game development concepts.",
+            ""
+          ],
+          "tech": [
+            "Unity",
+            "C#",
+            ".NET",
+            "Game Development"
+          ],
+          "image": "/images/projects/space-shooter.jpg",
+          "status": "Complete",
+          "year": "2022",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "impact": "Demonstrated Unity basics, C# scripting, and arcade gameplay mechanics",
+          "github": "https://github.com/finjener/space_shooter"
+        }
+      ]
+    },
+    {
+      "name": "Web Crawler",
+      "description": "A multithreaded web crawler with custom queue and visited URL management, error handling, and logging.",
+      "projects": [
+        {
+          "title": "web crawler",
+          "description": [
+            "",
+            "",
+            "A multithreaded web crawler that starts from a root URL, manages visited URLs and URLs to visit.",
+            ""
+          ],
+          "tech": [
+            "Python",
+            "Multithreading",
+            "Networking",
+            "Testing"
+          ],
+          "image": "/images/projects/web-crawler.jpg",
+          "status": "Prototype",
+          "year": "2022",
+          "role": "Developer",
+          "teamSize": "1 member",
+          "impact": "Explored how web crawling mechanism works and how it can be implemented with python",
+          "github": "https://github.com/finjener/web_crawler"
+        }
+      ]
+    }
+  ]
+}

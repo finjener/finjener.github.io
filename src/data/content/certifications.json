@@ -1,0 +1,59 @@
+{
+  "title": "Events",
+  "certifications": [
+    {
+      "name": "Linux Summer Camp",
+      "description": [
+        "##### Linux System Administration",
+        "",
+        "- **Focus Areas**:",
+        "  - System Administration",
+        "  - Developer Operations",
+        "  - Information Security"
+      ],
+      "issuer": "Turkish Linux Users Association (LKD)",
+      "link": "https://kamp.linux.org.tr/"
+    },
+    {
+      "name": "HackerCamp",
+      "description": [
+        "##### Overall Cyber Security",
+        "",
+        "- **Focus Areas**:",
+        "  - Network Security",
+        "  - Web Security",
+        "  - Software Security"
+      ],
+      "issuer": "OctoSec Cyber Security Community",
+      "link": "https://octosec.net/en/#projects"
+    },
+    {
+      "name": "Linux Winter Camp",
+      "description": [
+        "##### Cryptography 101",
+        "",
+        "- **Focus Areas**:",
+        "  - Overview of Cryptography",
+        "  - Algebra, groups, rings",
+        "  - Secure Communication Protocols"
+      ],
+      "issuer": "Turkish Linux Users Association (LKD)",
+      "link": "https://kamp.linux.org.tr"
+    },
+    {
+      "name": "Akademik Bilişim / Academic Informatics",
+      "description": [
+        "##### Web Development With Python",
+        "",
+        "- **Focus Areas**:",
+        "  - Web Development",
+        "  - API Development",
+        "  - Deployment",
+        "",
+        "It was intended for gaining general familiarity with the web development."
+      ],
+      "issuer": "Internet Teknolojileri Derneği (INETD) / Internet Technologies Association",
+      "link": "https://www.inetd.org.tr/"
+    }
+  ]
+} 

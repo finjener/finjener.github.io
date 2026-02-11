@@ -1,0 +1,53 @@
+{
+  "title": " ",
+  "categories": [
+    {
+      "name": " ",
+      "description": [
+        "## Side projects I am working on",
+        "- A Personal daily drive distro based on debian linux **[Docker, Bash, Git, Arch, Fedora, Ubuntu]**",
+        "- Setting up auto updated/maintained/secure cloud solutions for replacing Big Tech products on daily life **[Nextcloud, Immich, Vaultwarden, Proton, Selft-Host LLMs, ...]**",
+        "    photo-video/contact storing, password managing, note taking and calendar. ",
+        "    personal private vpn",
+        "- An education platform for teachers and middle/high school students **[Moodle, MySQL, Linux, REST, Angular, DevOps, Continuous Integration, Continuous Delivery]**",
+        "    Platform consist of 2 parts:",
+        "      'Portal' for managing classes like homeworks, quizes, exams, live classes, conferences, grading, auto analysis of students.",
+        "      'Shelf' for teachers to share free/paid lessons, and for students to buy, watch lessons, follow classes.",
+        "- Yacht/Boat rental platform for various events **[Javascript, Nodejs, Typescript, Nextjs, REST, MySQL]**",
+        "    Creating a brand for Istanbul bosphorus boat tours, events, parties, proposals etc.",
+        "    Working on boat/yacht reservation platform for various events",
+        "",
+        "### Current Focus",
+        "- Obviously LLMs and how to use them efficiently",
+        "- Developer operations",
+        "- Automation",
+        "- Online privacy",
+        "- Online security",
+        "- History, geopolitics and ethnolinguistics",
+        "",
+        "### Continuous to do list",
+        "- Simplifying repeated tasks",
+        "- Building practical solutions for daily life problems",
+        "- Contributing to open source",
+        "- Engineering a communication protocol immune to intervention",
+        "- Building a solution for distinguishing true and false news/information from social media"
+      ],
+      "items": []
+    },
+    {
+      "name": " ",
+      "description": [
+        "### What I do other than these ?",
+        "",
+        "",
+        "- Speed hiking(recovering)",
+        "- Diving(a challenging sport for me)",
+        "- All about Sci-Fi",
+        "- Gaming(Csgo, Dota(once upon a time))",
+        "",
+        "> "
+      ],
+      "items": []
+    }
+  ]
+}

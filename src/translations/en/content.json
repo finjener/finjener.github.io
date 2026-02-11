@@ -1,0 +1,173 @@
+{
+  "portfolio": {
+    "owner": {
+      "name": "Your Name",
+      "title": "Software Engineer",
+      "location": "Location",
+      "email": "your.email@example.com",
+      "website": "yourwebsite.com",
+      "bio": "Passionate software engineer building innovative solutions"
+    },
+    "brand": {
+      "tagline": "Building the future with code",
+      "mission": "To create innovative software solutions that make a positive impact",
+      "vision": "A world where technology enhances human potential",
+      "values": ["Innovation", "Quality", "Collaboration", "Learning"]
+    }
+  },
+  "skills": {
+    "categories": {
+      "programming": "Programming Languages",
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "database": "Databases",
+      "cloud": "Cloud & DevOps",
+      "tools": "Development Tools",
+      "soft": "Soft Skills"
+    },
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    }
+  },
+  "experience": {
+    "types": {
+      "fullTime": "Full-time",
+      "partTime": "Part-time",
+      "contract": "Contract",
+      "freelance": "Freelance",
+      "internship": "Internship",
+      "volunteer": "Volunteer"
+    },
+    "status": {
+      "current": "Current",
+      "past": "Past"
+    },
+    "duration": {
+      "present": "Present",
+      "years": "{{count}} year",
+      "yearsPlural": "{{count}} years",
+      "months": "{{count}} month",
+      "monthsPlural": "{{count}} months"
+    }
+  },
+  "education": {
+    "degrees": {
+      "bachelor": "Bachelor's Degree",
+      "master": "Master's Degree",
+      "phd": "PhD",
+      "associate": "Associate Degree",
+      "certificate": "Certificate",
+      "diploma": "Diploma"
+    },
+    "status": {
+      "graduated": "Graduated",
+      "inProgress": "In Progress",
+      "expected": "Expected"
+    }
+  },
+  "projects": {
+    "categories": {
+      "web": "Web Development",
+      "mobile": "Mobile Apps",
+      "desktop": "Desktop Applications",
+      "api": "APIs & Backend",
+      "iot": "IoT & Hardware",
+      "ai": "AI & Machine Learning",
+      "blockchain": "Blockchain",
+      "game": "Game Development",
+      "tool": "Development Tools",
+      "library": "Libraries & Frameworks",
+      "other": "Other"
+    },
+    "technologies": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "cloud": "Cloud",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "devops": "DevOps",
+      "testing": "Testing"
+    }
+  },
+  "certifications": {
+    "status": {
+      "active": "Active",
+      "expired": "Expired",
+      "pending": "Pending"
+    },
+    "types": {
+      "professional": "Professional Certification",
+      "course": "Course Completion",
+      "award": "Award",
+      "license": "License"
+    }
+  },
+  "languages": {
+    "proficiency": {
+      "native": "Native",
+      "fluent": "Fluent",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "beginner": "Beginner",
+      "basic": "Basic"
+    },
+    "skills": {
+      "speaking": "Speaking",
+      "writing": "Writing",
+      "reading": "Reading",
+      "listening": "Listening"
+    }
+  },
+  "social": {
+    "platforms": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "twitch": "Twitch",
+      "discord": "Discord",
+      "telegram": "Telegram",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "website": "Website",
+      "blog": "Blog",
+      "portfolio": "Portfolio"
+    },
+    "actions": {
+      "follow": "Follow",
+      "connect": "Connect",
+      "message": "Message",
+      "visit": "Visit",
+      "subscribe": "Subscribe"
+    }
+  },
+  "testimonials": {
+    "title": "What People Say",
+    "anonymous": "Anonymous",
+    "verified": "Verified",
+    "roles": {
+      "colleague": "Colleague",
+      "client": "Client",
+      "manager": "Manager",
+      "mentor": "Mentor",
+      "student": "Student",
+      "partner": "Partner"
+    }
+  },
+  "timeline": {
+    "present": "Present",
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "duration": "Duration",
+    "location": "Location",
+    "remote": "Remote",
+    "onsite": "On-site",
+    "hybrid": "Hybrid"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Home",
+  "hero": {
+    "greeting": "Merhaba!_Selam!_Hi!_Hola!_Hallo!_Ciao!",
+    "tagline": "",
+    "cta": {
+      "primary": {
+        "text": "View Some of My Work",
+        "link": "/projects"
+      },
+      "secondary": {
+        "text": "Get In Touch",
+        "link": "/contact"
+      }
+    }
+  },
+  "highlights": {
+    "title": "What I Do",
+    "items": [
+      {
+        "title": "Designing Project",
+        "description": "Designing, scalable and maintainable software systems"
+      },
+      {
+        "title": "Engineering",
+        "description": "Building end-to-end solutions with modern and fit for purpose technologies without creating reliance on individual developers as much as possible"
+      },
+      {
+        "title": "Having Fun🙂",
+        "description": "I like to have fun, enjoy life while working with well meaning colleagues in a nice environment"
+      }
+    ]
+  }
+}
