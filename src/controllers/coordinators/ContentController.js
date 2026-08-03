@@ -273,10 +273,14 @@ export class ContentController {
     for (const sectionName of contentSections) {
       const sectionContent = content[sectionName];
       
-      // Validate section
-      const validation = contentModel.validateContent(sectionContent, sectionName);
-      if (!validation.isValid) {
-        console.warn(`Content validation failed for ${sectionName}:`, validation.errors);
+      // Validate only sections that have defined validation rules.
+      // Unknown/derived sections (overview, leadership, lastUpdated, ...)
+      // pass through unvalidated — they are not covered by the rule set.
+      if (contentModel.validationRules[sectionName]) {
+        const validation = contentModel.validateContent(sectionContent, sectionName);
+        if (!validation.isValid) {
+          console.warn(`Content validation failed for ${sectionName}:`, validation.errors);
+        }
       }
 
       // Transform for display

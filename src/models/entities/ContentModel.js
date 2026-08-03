@@ -175,16 +175,19 @@ export class ContentModel {
         }
       },
       about: {
-        required: ['title'],
+        required: ['professionalOverview'],
         types: {
-          title: 'string'
+          professionalOverview: 'object'
         }
       },
       projects: {
-        required: ['title', 'categories'],
+        // NOTE: the data pipeline (src/data/index.js) flattens the raw
+        // `categories` structure into `items` before this runs, so the rule
+        // targets the transformed shape.
+        required: ['title', 'items'],
         types: {
           title: 'string',
-          categories: 'object'
+          items: 'object'
         }
       },
       articles: {

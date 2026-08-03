@@ -38,6 +38,30 @@ describe('ContentModel', () => {
       const result = model.validateContent({ title: 'Home', hero: {} }, 'home');
       expect(result.errors).toContain('Hero section missing greeting');
     });
+
+    // Regression: the data pipeline flattens projects.categories into items
+    // before validation, so the rule must target the transformed shape.
+    test('accepts flattened projects payload (items, no categories)', () => {
+      const result = model.validateContent(
+        { title: 'Projects', items: [{ name: 'ROS Tool' }] },
+        'projects'
+      );
+      expect(result.isValid).toBe(true);
+    });
+
+    // Regression: 'about' is aliased from overview at runtime
+    test('accepts about payload shaped as professionalOverview', () => {
+      const result = model.validateContent(
+        { professionalOverview: { title: 'Overview' } },
+        'about'
+      );
+      expect(result.isValid).toBe(true);
+    });
+
+    test('accepts contact payload with a title', () => {
+      const result = model.validateContent({ title: 'Contact' }, 'contact');
+      expect(result.isValid).toBe(true);
+    });
   });
 
   describe('transformContentForDisplay', () => {
