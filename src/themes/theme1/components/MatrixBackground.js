@@ -6,9 +6,8 @@
  * @requires p5
  */
 
-// Import React hooks and p5.js library
+// Import React hooks (p5 is loaded dynamically so it only ships when theme1 is active)
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import p5 from 'p5';
 
 /**
  * @component MatrixBackground
@@ -291,12 +290,27 @@ const MatrixBackground = () => {
       const random = (min, max) => p.random(min, max);
     };
 
-    // Create new p5 instance and attach it to the container
-    const p5Instance = new p5(sketch, containerRef.current);
+    // Dynamically load p5 so it only downloads when theme1 is the active theme.
+    // The cancelled flag guards against React 18 StrictMode double-mounting:
+    // a slow load resolving after unmount must not instantiate a second sketch.
+    let cancelled = false;
+    let p5Instance = null;
+
+    import('p5')
+      .then(({ default: P5 }) => {
+        if (cancelled) return;
+        p5Instance = new P5(sketch, containerRef.current);
+      })
+      .catch((err) => {
+        if (!cancelled) {
+          console.warn('p5 failed to load — matrix background disabled:', err);
+        }
+      });
 
     // Cleanup function to remove p5 instance when component unmounts
     return () => {
-      p5Instance.remove();
+      cancelled = true;
+      if (p5Instance) p5Instance.remove();
     };
   }, [isMobile]); // Recreate when mobile state changes
 

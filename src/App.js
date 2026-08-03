@@ -6,19 +6,19 @@
  */
 
 // Import React and routing dependencies
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import theme components from central theme loader
 import { MatrixBackground, Navbar, Footer, BackgroundMusic, hasEffects } from './themes';
 
-// Import page components
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import ArticleListingPage from './pages/ArticleListingPage';
-import ArticleDetailPage from './pages/ArticleDetailPage';
+// Lazy-load pages so each route ships its own chunk
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Contact = lazy(() => import('./pages/Contact'));
+const ArticleListingPage = lazy(() => import('./pages/ArticleListingPage'));
+const ArticleDetailPage = lazy(() => import('./pages/ArticleDetailPage'));
 
 // Import shared components
 import ScrollToTop from './components/ScrollToTop';
@@ -55,14 +55,25 @@ function App() {
           {/* Error boundary for graceful error handling */}
           <ErrorBoundary>
             <div className="container mx-auto px-responsive pt-20">
-              <Routes>
+              <Suspense
+                fallback={
+                  <div
+                    className="py-32 text-center"
+                    style={{ color: 'var(--t2-muted)' }}
+                  >
+                    Loading…
+                  </div>
+                }
+              >
+                <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/articles" element={<ArticleListingPage />} />
                 <Route path="/articles/:slug" element={<ArticleDetailPage />} />
-              </Routes>
+                </Routes>
+              </Suspense>
               {Footer && <Footer />}
             </div>
           </ErrorBoundary>
