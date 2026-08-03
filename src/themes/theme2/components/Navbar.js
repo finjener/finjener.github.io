@@ -1,5 +1,5 @@
 /**
- * Theme5 Navbar Component - Minimalist
+ * Theme2 Navbar Component - Minimalist
  * Clean, simple navigation with theme toggle
  */
 

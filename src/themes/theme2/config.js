@@ -1,15 +1,16 @@
 /**
- * Theme5 Configuration - Minimalist
+ * Theme2 Configuration - Minimalist
  * Clean, minimal portfolio theme - simplicity is genius
  */
 
 export const theme2Config = {
     id: 'theme2',
     name: 'Minimalist',
-    type: 'light', // Default typescription: 'Clean, minimal portfolio theme - simplicity is genius',
+    type: 'light',
+    description: 'Clean, minimal portfolio theme - simplicity is genius',
     disableEffects: true,
     supportsDarkMode: true,
-    defaultTheme: 'light', // Default to dark mode
+    defaultTheme: 'light', // Default to light mode
 
     colors: {
         // Light mode
