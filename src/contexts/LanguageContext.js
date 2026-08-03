@@ -19,15 +19,9 @@ export const SUPPORTED_LANGUAGES = [
     flag: '🇺🇸',
     direction: 'ltr',
     region: 'US'
-  },
-  {
-    code: 'ru',
-    name: 'Russian',
-    nativeName: 'Русский',
-    flag: '🇷🇺',
-    direction: 'ltr',
-    region: 'RU'
   }
+  // Russian is temporarily hidden until its translations are complete.
+  // The ru/*.json files only contain placeholder template content.
 ];
 
 /**
