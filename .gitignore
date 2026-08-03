@@ -1,21 +1,25 @@
-git stats/node_modules
+# Dependencies
+/node_modules
 /.pnp
 .pnp.js
 
+# Build output
+/build
 /coverage
 
-/build
-/node_modules
-
-.DS_Store
+# Environment (machine-local config)
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Editor
+.DS_Store
 .idea/
 .vscode/
