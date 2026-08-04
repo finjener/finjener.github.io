@@ -28,8 +28,21 @@ npm install
 npm start          # dev server on http://localhost:3000
 npm test           # jest (watch mode); CI=true npm test -- --watchAll=false for one run
 npm run build      # production build to build/
-npm run deploy     # build + publish to GitHub Pages via gh-pages
 ```
+
+## Deploy
+
+GitHub Pages for this repo serves from the **`main`** branch (user site), so the
+deploy flow is:
+
+```bash
+npm run build              # production build to build/
+git push origin main       # GitHub Pages rebuilds and publishes automatically
+```
+
+Note: the `npm run deploy` script (`gh-pages -d build`) publishes to the
+`gh-pages` branch, which this repo's Pages configuration does **not** serve —
+prefer pushing `main`.
 
 ## Theme System
 
