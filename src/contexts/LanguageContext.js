@@ -7,6 +7,13 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
+// Preload the default language's translations so the first render has strings.
+// Without this, translations start empty and any t() call before the async
+// load resolves logs "Translation not found" and briefly renders the raw key.
+import enCommon from '../translations/en/common.json';
+import enPages from '../translations/en/pages.json';
+import enContent from '../translations/en/content.json';
+
 /**
  * @constant SUPPORTED_LANGUAGES
  * @description Array of supported languages with their metadata
@@ -29,6 +36,9 @@ export const SUPPORTED_LANGUAGES = [
  * @description Default language code
  */
 const DEFAULT_LANGUAGE = 'en';
+
+// Merged default-language translations, used as the initial state.
+const DEFAULT_TRANSLATIONS = { ...enCommon, ...enPages, ...enContent };
 
 /**
  * @constant LANGUAGE_STORAGE_KEY
@@ -98,7 +108,7 @@ export const LanguageProvider = ({ children }) => {
     return detectBrowserLanguage();
   });
 
-  const [translations, setTranslations] = useState({});
+  const [translations, setTranslations] = useState(DEFAULT_TRANSLATIONS);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -145,7 +155,7 @@ export const LanguageProvider = ({ children }) => {
           setTranslations(fallbackTranslations);
         } catch (fallbackErr) {
           console.error('Failed to load fallback translations:', fallbackErr);
-          setTranslations({});
+          setTranslations(DEFAULT_TRANSLATIONS);
         }
       }
     } finally {
