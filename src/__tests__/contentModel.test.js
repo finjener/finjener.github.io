@@ -92,6 +92,14 @@ describe('ContentModel', () => {
       expect(out.totalProjects).toBe(3);
     });
 
+    test('counts flattened project items (data pipeline shape)', () => {
+      const out = model.transformContentForDisplay(
+        { title: 'Projects', items: [1, 2, 3] },
+        'projects'
+      );
+      expect(out.totalProjects).toBe(3);
+    });
+
     test('sorts articles newest first', () => {
       const out = model.transformContentForDisplay(
         {

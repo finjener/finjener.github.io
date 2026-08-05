@@ -3,7 +3,7 @@
  * Clean, simple navigation with theme toggle
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { theme2Config } from '../config';
 
@@ -97,8 +97,8 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Apply theme to document
-    useEffect(() => {
+    // Apply theme to document before paint so there is no light/dark flash
+    useLayoutEffect(() => {
         if (isDarkMode) {
             document.documentElement.setAttribute('data-theme', 'dark');
             document.documentElement.classList.add('dark');

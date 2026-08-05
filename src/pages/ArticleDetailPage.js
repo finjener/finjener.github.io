@@ -9,7 +9,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import articles from '../data/content/articles.json';
 import { isPreviewMode } from '../services/contentful';
 import { loadArticleContent } from '../services/articleService';
@@ -24,7 +24,6 @@ import MarkdownContent from '../components/MarkdownContent';
  */
 const ArticleDetailPage = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const [preview] = useState(isPreviewMode());
   const [articleData, setArticleData] = useState({
     content: '',
@@ -89,8 +88,7 @@ const ArticleDetailPage = () => {
 
   // Redirect to articles page if article not found
   if (!article) {
-    navigate('/articles');
-    return null;
+    return <Navigate to="/articles" replace />;
   }
 
   return (

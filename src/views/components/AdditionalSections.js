@@ -18,9 +18,11 @@ const AdditionalSections = ({
 }) => (
   <>
     {certifications && <CertificationsSection data={certifications} delay={delay} />}
-    {languages && <LanguagesSection data={languages} delay={delay + 0.1} />}
-    {volunteering && <VolunteeringSection data={volunteering} delay={delay + 0.2} />}
-    {hobbies && <HobbiesSection data={hobbies} delay={delay + 0.3} />}
+    {publications && <PublicationsSection data={publications} delay={delay + 0.1} />}
+    {languages && <LanguagesSection data={languages} delay={delay + 0.2} />}
+    {awards && <AwardsSection data={awards} delay={delay + 0.3} />}
+      {volunteering && <VolunteeringSection data={volunteering} delay={delay + 0.4} />}
+      {hobbies && <HobbiesSection data={hobbies} delay={delay + 0.5} />}
   </>
 );
 
@@ -77,6 +79,102 @@ const CertificationsSection = ({ data, delay }) => {
                 ) : (
                   cert.issuer
                 )}
+              </span>
+            </span>
+          </div>
+        ))}
+      </div>
+    </motion.section>
+  );
+};
+
+/** Publications — bullet prefix, title is the link, meta in faded text */
+const PublicationsSection = ({ data, delay }) => {
+  if (!data?.publications?.length) return null;
+
+  return (
+    <motion.section
+      initial={{ y: 15, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay, duration: 0.4 }}
+    >
+      <SectionHeader>{data.title || 'Publications'}</SectionHeader>
+      <div className="space-y-1.5">
+        {data.publications.map((pub, index) => (
+          <div key={index} className="flex items-baseline">
+            <span style={{ marginRight: '0.5rem', flexShrink: 0, color: 'var(--t2-muted)' }}>·</span>
+            <span>
+              {pub.link ? (
+                <a
+                  href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--t2-muted)',
+                    fontWeight: 600,
+                    textDecoration: 'underline',
+                    textUnderlineOffset: '3px',
+                    textDecorationColor: 'var(--t2-border)',
+                  }}
+                >
+                  {pub.title}
+                </a>
+              ) : (
+                <span style={{ color: 'var(--t2-muted)', fontWeight: 600 }}>
+                  {pub.title}
+                </span>
+              )}
+              <span style={{ color: 'var(--t2-muted)', fontSize: 'var(--t2-text-sm)' }}>
+                {' '}
+                {[pub.type, pub.platform, pub.date].filter(Boolean).join(' · ')}
+              </span>
+            </span>
+          </div>
+        ))}
+      </div>
+    </motion.section>
+  );
+};
+
+/** Awards — bullet prefix, award name bold, issuer + date faded */
+const AwardsSection = ({ data, delay }) => {
+  if (!data?.awards?.length) return null;
+
+  return (
+    <motion.section
+      initial={{ y: 15, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay, duration: 0.4 }}
+    >
+      <SectionHeader>{data.title || 'Awards & Recognition'}</SectionHeader>
+      <div className="space-y-1.5">
+        {data.awards.map((award, index) => (
+          <div key={index} className="flex items-baseline">
+            <span style={{ marginRight: '0.5rem', flexShrink: 0, color: 'var(--t2-muted)' }}>·</span>
+            <span>
+              {award.link ? (
+                <a
+                  href={award.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--t2-muted)',
+                    fontWeight: 600,
+                    textDecoration: 'underline',
+                    textUnderlineOffset: '3px',
+                    textDecorationColor: 'var(--t2-border)',
+                  }}
+                >
+                  {award.title}
+                </a>
+              ) : (
+                <span style={{ color: 'var(--t2-muted)', fontWeight: 600 }}>
+                  {award.title}
+                </span>
+              )}
+              <span style={{ color: 'var(--t2-muted)', fontSize: 'var(--t2-text-sm)' }}>
+                {award.issuer && `, ${award.issuer}`}
+                {award.date && ` (${award.date})`}
               </span>
             </span>
           </div>

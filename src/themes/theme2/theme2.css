@@ -14,16 +14,16 @@
    =================================== */
 
 :root {
-    /* Colors - Default Dark Mode */
-    --t2-background: #09090b;
-    --t2-foreground: #fafafa;
-    --t2-muted: #a1a1aa;
-    --t2-muted-foreground: #a1a1aa;
-    --t2-border: #27272a;
-    --t2-accent: #60a5fa;
-    --t2-accent-hover: #93c5fd;
-    --t2-card: #18181b;
-    --t2-card-hover: #27272a;
+    /* Colors - Default Light Mode (matches config defaultTheme) */
+    --t2-background: #fafafa;
+    --t2-foreground: #18181b;
+    --t2-muted: #71717a;
+    --t2-muted-foreground: #52525b;
+    --t2-border: #e4e4e7;
+    --t2-accent: #3b82f6;
+    --t2-accent-hover: #2563eb;
+    --t2-card: #ffffff;
+    --t2-card-hover: #f4f4f5;
 
     /* Typography */
     --t2-font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -65,18 +65,18 @@
     --t2-radius-lg: 0.5rem;
 }
 
-/* Light Mode Override */
-[data-theme="light"],
-.light {
-    --t2-background: #fafafa;
-    --t2-foreground: #18181b;
-    --t2-muted: #71717a;
-    --t2-muted-foreground: #52525b;
-    --t2-border: #e4e4e7;
-    --t2-accent: #3b82f6;
-    --t2-accent-hover: #2563eb;
-    --t2-card: #ffffff;
-    --t2-card-hover: #f4f4f5;
+/* Dark Mode Override */
+[data-theme="dark"],
+.dark {
+    --t2-background: #09090b;
+    --t2-foreground: #fafafa;
+    --t2-muted: #a1a1aa;
+    --t2-muted-foreground: #a1a1aa;
+    --t2-border: #27272a;
+    --t2-accent: #60a5fa;
+    --t2-accent-hover: #93c5fd;
+    --t2-card: #18181b;
+    --t2-card-hover: #27272a;
 }
 
 /* ===================================

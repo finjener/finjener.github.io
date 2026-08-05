@@ -242,9 +242,13 @@ export class ContentModel {
    */
   _transformProjectsContent(content) {
     const transformed = { ...content };
-    
-    // Add computed properties for projects
-    if (transformed.categories) {
+
+    // Add computed properties for projects.
+    // The data pipeline (src/data/index.js) flattens categories into items,
+    // so target the flattened shape; keep the categories path as a fallback.
+    if (Array.isArray(transformed.items)) {
+      transformed.totalProjects = transformed.items.length;
+    } else if (transformed.categories) {
       transformed.totalProjects = transformed.categories.reduce((total, category) => {
         return total + (category.projects?.length || 0);
       }, 0);

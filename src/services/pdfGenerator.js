@@ -57,7 +57,7 @@ const ResumeDocument = ({ content }) => {
 
         {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.headerName}>{resumeContact?.name || "Khalil Al-Adhami"}</Text>
+          <Text style={styles.headerName}>{resumeContact?.name || "Ferhat Sencer"}</Text>
 
           <View style={styles.headerContactConfig}>
             {/* Location */}
