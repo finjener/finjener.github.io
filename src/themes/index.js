@@ -6,10 +6,7 @@
  */
 
 // ============================================
-// ACTIVE THEME - Change this value to switch
-// ============================================
-// ============================================
-// ACTIVE THEME - Change this value to switch
+// ACTIVE_THEME - Change this value to switch
 // ============================================
 export const ACTIVE_THEME = 'theme2';
 
