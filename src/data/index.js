@@ -13,7 +13,6 @@ import home from './content/home.json';
 import contact from './content/contact.json';
 import articles from './content/articles.json';
 import resumeContact from './content/resumeContact.json';
-import { getContentfulContent } from '../services/contentful';
 
 export const loadLocalContent = () => {
   return {
@@ -146,7 +145,8 @@ export const getContent = async (isPreview = false) => {
       return transformContent(validLocalContent);
     }
 
-    // Try to get content from Contentful
+    // Try to get content from Contentful (lazy: SDK only loads on demand)
+    const { getContentfulContent } = await import('../services/contentful');
     const cmsContent = await getContentfulContent();
     const validCmsContent = validateContent(cmsContent);
     return transformContent({ ...validCmsContent, fromCMS: true });
