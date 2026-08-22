@@ -26,7 +26,6 @@
             "Raspberry Pi",
             "Radxa"
           ],
-          "image": "/images/projects/ros-tool.jpg",
           "link": "/articles/custom-os-build-automation-for-embeded-systems",
           "highlights": [
             "Automated multi-hour build process into a single command",
@@ -62,7 +61,6 @@
             "Qt",
             "CMake"
           ],
-          "image": "/images/projects/vitalsync.jpg",
           "link": "/articles/medical-device-simulation",
           "highlights": [
             "Developed custom painting for waveform visualization",
@@ -103,7 +101,6 @@
             "YOLOv8",
             "Computer Vision"
           ],
-          "image": "/images/projects/object-detection.jpg",
           "link": "articles/detect-it-object-detection-with-yolov8",
           "highlights": [
             "Implemented real-time video processing pipeline",
@@ -153,7 +150,6 @@
             "Debian",
             "System Administration"
           ],
-          "image": "/images/projects/debian-tools.jpg",
           "highlights": [
             "Consolidated multi-step installations into single scripts",
             "Implemented consistent error handling and user feedback",
@@ -185,7 +181,6 @@
             "CMake",
             "MVC"
           ],
-          "image": "/images/projects/wordle-mvc.jpg",
           "status": "Complete",
           "year": "2024",
           "role": "Developer",
@@ -213,7 +208,6 @@
             ".NET",
             "Game Development"
           ],
-          "image": "/images/projects/space-shooter.jpg",
           "status": "Complete",
           "year": "2022",
           "role": "Developer",
@@ -241,7 +235,6 @@
             "Networking",
             "Testing"
           ],
-          "image": "/images/projects/web-crawler.jpg",
           "status": "Prototype",
           "year": "2022",
           "role": "Developer",

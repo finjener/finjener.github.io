@@ -110,7 +110,6 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     tech: PropTypes.arrayOf(PropTypes.string).isRequired,
-    image: PropTypes.string,
     link: PropTypes.string.isRequired,
     highlights: PropTypes.arrayOf(PropTypes.string),
     status: PropTypes.string.isRequired,
