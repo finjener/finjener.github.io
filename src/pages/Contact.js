@@ -25,16 +25,6 @@ const Contact = () => {
   const [preview] = useState(isPreviewMode()); // Preview mode
 
   /**
-   * @constant formData
-   * @description Form state with initial empty values
-   */
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  /**
    * @effect Content Loading
    * @description Fetches content data when component mounts or preview mode changes
    */
@@ -52,31 +42,6 @@ const Contact = () => {
 
     loadContent();
   }, [preview]);
-
-  /**
-   * @function handleSubmit
-   * @description Handles form submission
-   * Currently logs form data to console
-   * @param {Event} e - Form submission event
-   */
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    // console.log(formData);
-  };
-
-  /**
-   * @function handleChange
-   * @description Handles form input changes
-   * Updates form state with new values
-   * @param {Event} e - Input change event
-   */
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   // Loading state UI
   if (loading) {

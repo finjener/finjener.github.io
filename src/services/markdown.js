@@ -3,25 +3,6 @@
  */
 
 /**
- * Loads markdown content from a URL
- * @param {string} contentPath - URL to the markdown file
- * @returns {Promise<string>} Markdown content
- */
-export const loadMarkdownContent = async (contentPath) => {
-  try {
-    const response = await fetch(contentPath);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to load markdown content: ${response.statusText}`);
-    }
-    
-    return await response.text();
-  } catch (error) {
-    throw error;
-  }
-};
-
-/**
  * Extract frontmatter from markdown content
  * Simple implementation - for full parsing consider using libraries like "gray-matter"
  * @param {string} content - Raw markdown content with optional frontmatter
