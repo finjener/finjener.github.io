@@ -1,27 +1,4 @@
 {
   "title": "Awards & Recognition",
-  "awards": [
-    {
-      "title": "Best Technical Solution",
-      "issuer": "Hackathon 2023",
-      "date": "2023",
-      "description": [
-        "## Project Overview",
-        "",
-        "### Challenge",
-        "Developed an innovative embedded solution for real-time data processing.",
-        "",
-        "### Key Features",
-        "- Real-time data analysis",
-        "- Custom optimization algorithms",
-        "- Hardware acceleration",
-        "",
-        "### Impact",
-        "- 40% performance improvement",
-        "- Selected for production implementation",
-        "- Adopted by multiple teams"
-      ],
-      "link": "https://hackathon-url.com"
-    }
-  ]
+  "awards": []
 } 

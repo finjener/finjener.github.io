@@ -1,27 +1,4 @@
 {
   "title": "Publications",
-  "publications": [
-    {
-      "title": "Embedded Systems Optimization",
-      "description": [
-        "## Abstract",
-        "",
-        "This paper presents novel optimization techniques for embedded systems.",
-        "",
-        "### Key Findings",
-        "",
-        "1. 40% performance improvement",
-        "2. 30% power reduction",
-        "3. Enhanced reliability",
-        "",
-        "### Impact",
-        "",
-        "The findings have been implemented in several industrial applications, leading to significant improvements in system efficiency and reliability."
-      ],
-      "type": "Research Paper",
-      "platform": "IEEE",
-      "date": "2023",
-      "link": "https://paper-link.com"
-    }
-  ]
+  "publications": []
 } 
