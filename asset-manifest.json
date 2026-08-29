@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.342a6b31.css",
-    "main.js": "/static/js/main.6bb1dc3a.js",
+    "main.js": "/static/js/main.53325d87.js",
     "static/js/936.b0ed23b2.chunk.js": "/static/js/936.b0ed23b2.chunk.js",
     "static/js/280.f1b600ff.chunk.js": "/static/js/280.f1b600ff.chunk.js",
     "static/js/113.63f161c3.chunk.js": "/static/js/113.63f161c3.chunk.js",
@@ -13,7 +13,7 @@
     "static/js/704.4391454a.chunk.js": "/static/js/704.4391454a.chunk.js",
     "static/js/905.58bcc285.chunk.js": "/static/js/905.58bcc285.chunk.js",
     "static/js/209.6085a7e8.chunk.js": "/static/js/209.6085a7e8.chunk.js",
-    "article-[request].js": "/static/js/article-[request].83adb4c8.chunk.js",
+    "article-[request].js": "/static/js/article-[request].73acfe95.chunk.js",
     "static/js/297.77ac0bd1.chunk.js": "/static/js/297.77ac0bd1.chunk.js",
     "static/js/579.e445a10b.chunk.js": "/static/js/579.e445a10b.chunk.js",
     "static/js/695.aded917c.chunk.js": "/static/js/695.aded917c.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/icon-mail.png": "/static/media/icon-mail.51b08bcbb5af7a861c31.png",
     "index.html": "/index.html",
     "main.342a6b31.css.map": "/static/css/main.342a6b31.css.map",
-    "main.6bb1dc3a.js.map": "/static/js/main.6bb1dc3a.js.map",
+    "main.53325d87.js.map": "/static/js/main.53325d87.js.map",
     "936.b0ed23b2.chunk.js.map": "/static/js/936.b0ed23b2.chunk.js.map",
     "280.f1b600ff.chunk.js.map": "/static/js/280.f1b600ff.chunk.js.map",
     "113.63f161c3.chunk.js.map": "/static/js/113.63f161c3.chunk.js.map",
@@ -31,13 +31,13 @@
     "84.2ace5db1.chunk.js.map": "/static/js/84.2ace5db1.chunk.js.map",
     "454.015e88b9.chunk.js.map": "/static/js/454.015e88b9.chunk.js.map",
     "209.6085a7e8.chunk.js.map": "/static/js/209.6085a7e8.chunk.js.map",
-    "article-[request].83adb4c8.chunk.js.map": "/static/js/article-[request].83adb4c8.chunk.js.map",
+    "article-[request].73acfe95.chunk.js.map": "/static/js/article-[request].73acfe95.chunk.js.map",
     "297.77ac0bd1.chunk.js.map": "/static/js/297.77ac0bd1.chunk.js.map",
     "579.e445a10b.chunk.js.map": "/static/js/579.e445a10b.chunk.js.map",
     "695.aded917c.chunk.js.map": "/static/js/695.aded917c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.342a6b31.css",
-    "static/js/main.6bb1dc3a.js"
+    "static/js/main.53325d87.js"
   ]
 }
