@@ -213,7 +213,7 @@ const ResumeDocument = ({ content }) => {
         {
           projects && (Array.isArray(projects) || Array.isArray(projects.categories) || Array.isArray(projects.items)) && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Open Source Projects</Text>
+              <Text style={styles.sectionTitle}>Projects</Text>
               {(() => {
                 let flatProjects = [];
                 if (Array.isArray(projects)) flatProjects = projects;
@@ -233,7 +233,9 @@ const ResumeDocument = ({ content }) => {
                   .map((proj, index) => {
                     // Extract description: Look for first non-header, non-empty line
                     let desc = '';
-                    if (Array.isArray(proj.description)) {
+                    if (proj.summary) {
+                      desc = proj.summary;
+                    } else if (Array.isArray(proj.description)) {
                       const lines = proj.description.filter(line =>
                         line.trim().length > 0 && !line.trim().startsWith('#')
                       );
@@ -287,6 +289,10 @@ const ResumeDocument = ({ content }) => {
                             <Image src={githubIcon} style={{ width: 10, height: 10, marginRight: 4 }} />
                             <Text style={[styles.projectTitle, { color: '#000000' }]}>{displayTitle}</Text>
                           </Link>
+                        ) : articleLink ? (
+                          <Link src={articleLink} style={{ textDecoration: 'none' }}>
+                            <Text style={[styles.projectTitle, { color: '#000000' }]}>{displayTitle}</Text>
+                          </Link>
                         ) : (
                           <Text style={styles.projectTitle}>{displayTitle}</Text>
                         )}
@@ -295,7 +301,7 @@ const ResumeDocument = ({ content }) => {
 
                         {/* Description and Article Link */}
                         <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1, flexWrap: 'wrap' }}>
-                          <Text style={[styles.regular, styles.faded]}>{desc}</Text>
+                          <Text style={[styles.regular, styles.faded, proj.summary ? { maxLines: 1, textOverflow: 'ellipsis' } : {}]}>{desc}</Text>
 
                           {/* Removed "see article section" text */}
                         </View>
@@ -378,20 +384,32 @@ const ResumeDocument = ({ content }) => {
           content.articles && content.articles.items && content.articles.items.length > 0 && (
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Articles</Text>
-              {content.articles.items.map((article, index) => (
-                <View key={index} style={{ marginBottom: 2 }}>
-                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                    {/* Article Title as Link */}
-                    <Link src={`https://finjener.github.io/#/${article.contentPath ? article.contentPath.replace('.md', '') : ''}`} style={styles.link}>
-                      <Text style={[styles.bold, { fontSize: 10 }]}>{article.title}</Text>
-                    </Link>
+              {(() => {
+                // Two columns: first half on the left, second half on the right
+                const items = content.articles.items;
+                const half = Math.ceil(items.length / 2);
+                const columns = [items.slice(0, half), items.slice(half)];
+                return (
+                  <View style={{ flexDirection: 'row' }}>
+                    {columns.map((column, colIndex) => (
+                      <View key={colIndex} style={{ flex: 1, marginRight: colIndex === 0 ? 12 : 0 }}>
+                        {column.map((article, index) => (
+                          <View key={index} wrap={false} style={{ marginBottom: 3 }}>
+                            {/* Article Title as Link */}
+                            <Link src={`https://finjener.github.io/#/${article.contentPath ? article.contentPath.replace('.md', '') : ''}`} style={styles.link}>
+                              <Text style={[styles.bold, { fontSize: 10 }]}>{article.title}</Text>
+                            </Link>
+                            {/* Optional Excerpt, limited to 1 line to keep the two columns on one page */}
+                            {article.excerpt && (
+                              <Text style={[styles.regular, styles.faded, { fontSize: 10, marginTop: 1, maxLines: 1, textOverflow: 'ellipsis' }]}>{article.excerpt}</Text>
+                            )}
+                          </View>
+                        ))}
+                      </View>
+                    ))}
                   </View>
-                  {/* Optional Excerpt */}
-                  {article.excerpt && (
-                    <Text style={[styles.regular, styles.faded, { fontSize: 10, marginTop: 1 }]}>{article.excerpt}</Text>
-                  )}
-                </View>
-              ))}
+                );
+              })()}
             </View>
           )
         }
