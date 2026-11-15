@@ -11,6 +11,7 @@
 // Import core dependencies
 import React, { memo, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
+import MermaidDiagram from './MermaidDiagram';
 
 // Import markdown plugins and extensions
 import remarkGfm from 'remark-gfm';
@@ -65,6 +66,9 @@ const MarkdownContent = memo(({ content, className = '' }) => {
            */
           code({ node, inline, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
+            if (!inline && match && match[1] === 'mermaid') {
+              return <MermaidDiagram chart={String(children).replace(/\n$/, '')} />;
+            }
             return !inline && match ? (
               // Multi-line code block - Plain text
               <div className="code-block-wrapper my-6">
