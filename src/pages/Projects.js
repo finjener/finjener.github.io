@@ -53,6 +53,12 @@ const itemVariants = {
  * @returns {JSX.Element} Minimal project list item
  */
 const ProjectCard = ({ project }) => {
+  // Project descriptions can be either a string or an array of markdown
+  // lines. Show the first meaningful paragraph in the list view.
+  const descriptionText = Array.isArray(project.description)
+    ? project.description.find(line => typeof line === 'string' && line.trim()) || ''
+    : project.description || '';
+
   return (
     <motion.div
       className="py-6 border-b border-edex-dark/20 last:border-b-0"
@@ -69,11 +75,9 @@ const ProjectCard = ({ project }) => {
         {project.status} · {project.year}
       </p>
 
-      {/* Description - first line only for cleaner look */}
+      {/* Description - first paragraph only for cleaner look */}
       <p className="text-edex-light/80 mb-3 line-clamp-2">
-        {typeof project.description === 'string'
-          ? project.description.split('\n')[0]
-          : project.description}
+        {descriptionText.split('\n')[0]}
       </p>
 
       {/* Action links */}
@@ -108,9 +112,12 @@ const ProjectCard = ({ project }) => {
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    tech: PropTypes.arrayOf(PropTypes.string).isRequired,
-    link: PropTypes.string.isRequired,
+    description: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ]).isRequired,
+    tech: PropTypes.arrayOf(PropTypes.string),
+    link: PropTypes.string,
     highlights: PropTypes.arrayOf(PropTypes.string),
     status: PropTypes.string.isRequired,
     year: PropTypes.string.isRequired,

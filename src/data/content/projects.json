@@ -2,6 +2,86 @@
   "title": "Projects",
   "categories": [
     {
+      "name": "Education Technology",
+      "description": "A coaching platform built beside an existing LMS",
+      "projects": [
+        {
+          "title": "FK Education Platform",
+          "summary": "Coaching platform beside an open-source LMS: plans, reviews, lessons, parent view.",
+          "description": [
+            "",
+            "I built this for a coaching center that already had an open-source LMS but was running its weekly plans, lesson payments, and parent updates outside it. The platform adds what the core was never meant to own: weekly plans, evidence, coach reviews, mock exams, private lessons, billing, and a read-only parent view.",
+            "",
+            "- 40 session-bound API endpoints and 10 custom tables beside an unmodified open-source LMS core",
+            "- Five roles with different visibility: student, coach, teacher, parent, admin",
+            "- Private lessons have their own pricing, payment, and audit trail",
+            "- 87 quality gates and a live smoke test run before each deploy"
+          ],
+          "tech": [
+            "React 19",
+            "Vite",
+            "REST API",
+            "Relational DB",
+            "RBAC",
+            "Billing",
+            "Audit Ledger",
+            "Spec-Driven AI"
+          ],
+          "link": "/articles/fk-education-academy-architecture",
+          "highlights": [
+            "Built the custom domain layer beside the LMS core instead of forking it, so upstream security patches stay cheap",
+            "Authorization is four checks — session, role, capability, and target scope — plus field-level masking",
+            "Game access is tied to submitted evidence, not coach approval, which keeps the feedback loop short without losing the audit trail",
+            "The workflow that kept 40 endpoints and five roles consistent later became SpecOS",
+            "Planned and built with low-cost LLMs; the scaffolding that made it possible is now open source"
+          ],
+          "status": "Proprietary",
+          "year": "2024 - 2026",
+          "role": "Architect & Lead Engineer",
+          "teamSize": "1 engineer",
+          "impact": "Runs the daily coaching operations, lesson billing, and parent visibility for an education provider without forking its upstream LMS core"
+        }
+      ]
+    },
+    {
+      "name": "AI Engineering & Architecture",
+      "description": "Deterministic rulesets, architectural scaffolding, and development tools for AI-assisted engineering",
+      "projects": [
+        {
+          "title": "SpecOS; architecture scaffolding for AI coding assistants",
+          "summary": "Architecture maps and rules that keep AI coding assistants from drifting.",
+          "description": [
+            "",
+            "SpecOS is the workflow I use to keep AI-assisted projects from drifting. You give it a plan or a PRD; it writes a small set of architecture maps and rules into the repo, and the assistant has to follow them instead of guessing.",
+            "",
+            "- Sub-3KB map slices keep the assistant from re-reading a 50KB architecture document on every prompt",
+            "- A sibling-pairs matrix forces one-file changes to update the screens and endpoints that depend on them",
+            "- A strict DB → API → test → UI order blocks frontend work until the data layer is real",
+            "- A zero-dependency Node script verifies links, map sizes, and template leftovers before commit"
+          ],
+          "tech": [
+            "Node.js",
+            "AI Engineering",
+            "Software Architecture",
+            "Bash",
+            "Developer Tools"
+          ],
+          "link": "/articles/specos-architecture-for-ai-coding-assistants",
+          "highlights": [
+            "Built after the same failure kept showing up on a real five-role education platform: one screen updated, two siblings forgotten",
+            "Cut the context needed to start a fresh session from tens of thousands of tokens to under 2,000",
+            "Open source, MIT, and deliberately extractable — generated rules keep working after the generator is removed"
+          ],
+          "status": "Active",
+          "year": "2026",
+          "role": "Creator & Lead Architect",
+          "teamSize": "1 member",
+          "impact": "Turns a general-purpose coding assistant into a constrained builder that follows the project's architecture instead of inventing one",
+          "github": "https://github.com/finjener/SpecOS"
+        }
+      ]
+    },
+    {
       "name": "Automation project",
       "description": "Projects developed in professional work environments",
       "projects": [
@@ -101,7 +181,7 @@
             "YOLOv8",
             "Computer Vision"
           ],
-          "link": "articles/detect-it-object-detection-with-yolov8",
+          "link": "/articles/detect-it-object-detection-with-yolov8",
           "highlights": [
             "Implemented real-time video processing pipeline",
             "Integrated YOLOv8n model for efficient object detection",

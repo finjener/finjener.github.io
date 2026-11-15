@@ -8,11 +8,51 @@
     "All",
     "Tutorial",
     "Technology",
+    "AI Engineering",
+    "System Architecture",
     "Development",
     "Career",
     "Research"
   ],
   "items": [
+    {
+      "id": "6",
+      "slug": "fk-education-academy-architecture",
+      "title": "FK Education Platform",
+      "category": "System Architecture",
+      "excerpt": "How a coaching platform sits beside an open-source LMS: the architecture, the authorization model, and how it was built with low-cost LLMs.",
+      "readTime": "6 min read",
+      "date": "2026",
+      "author": "finjener",
+      "tags": [
+        "System Architecture",
+        "Education Technology",
+        "React 19",
+        "REST API",
+        "RBAC",
+        "Low-Cost LLMs",
+        "SpecOS"
+      ],
+      "contentPath": "articles/fk-education-academy-architecture.md"
+    },
+    {
+      "id": "5",
+      "slug": "specos-architecture-for-ai-coding-assistants",
+      "title": "How to have sustainable AI-assisted project development using spec-driven development with the SpecOS toolkit",
+      "category": "AI Engineering",
+      "excerpt": "A set of small architecture maps and rules that keeps an AI coding assistant from drifting on a multi-role app.",
+      "readTime": "3 min read",
+      "date": "2026",
+      "author": "finjener",
+      "tags": [
+        "AI Engineering",
+        "Architecture",
+        "Developer Tools",
+        "LLMs",
+        "SpecOS"
+      ],
+      "contentPath": "articles/specos-architecture-for-ai-coding-assistants.md"
+    },
     {
       "id": "1",
       "slug": "custom-os-build-automation-for-embeded-systems",
